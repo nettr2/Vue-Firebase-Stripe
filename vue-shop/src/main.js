@@ -11,6 +11,8 @@ import 'bootstrap';
 import './assets/app.scss';
 
 Vue.component('NavBar',require('./components/NavBar.vue').default);
+Vue.component('Hero',require('./components/Hero.vue').default);
+Vue.component('products',require('./sections/products.vue').default);
 
 Vue.config.productionTip = false;
 

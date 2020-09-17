@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Admin from "../views/Admin.vue";
 
 Vue.use(VueRouter);
 
@@ -11,6 +12,11 @@ const routes = [
     component: Home
   },
   {
+    path: "/admin",
+    name: "admin",
+    component: Admin
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
@@ -19,6 +25,7 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
   }
+  
 ];
 
 const router = new VueRouter({
